@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+:root {
+    --color-01: #FFC21F;
+    --color-02: #222;
+    --color-03: #a9a9a9;
+    --color-04: #fff;
+}
+
+
+.container-fluid {
+    background-image: linear-gradient(45deg, var(--color-02), var(--color-01));
+    height: 100vh;
+}
+
+.calculator {
+    background-color: rgba(0, 0, 0, 0.6);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    width: 265px;
+    padding: 15px;
+}
+
+.btn {
+    width: 50px;
+    height: 50px;
+    font-size: 2em;
+    cursor: pointer;
+    margin: 3px;
+}
+
+.btn-equal {
+    height: 110px;
+}
+
+.btn-zero {
+    width: 110px;
+}
+
+.btn-light:hover {
+    background-color: var(--color-03);
+    color: var(--color-04);
+}
+
+.display {
+    height: 40px;
+    width: 100%;
+    font-size: 1.5em;
+    color: var(--color-02);
+    padding: 5px;
+    overflow: hidden;
+}
